@@ -13,6 +13,8 @@ import styles from './Counter.module.css';
 
 export function Counter() {
   const count = useAppSelector(selectCount);
+  console.log(selectCount);
+  
   const dispatch = useAppDispatch();
   const [incrementAmount, setIncrementAmount] = useState('2');
 
